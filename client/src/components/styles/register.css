@@ -1,0 +1,77 @@
+.register-form{
+    margin: 0 ;
+    padding: 20px;
+}
+.register-form h1{
+    font-size: large;
+    text-align: center;
+    font-weight: 800;
+}
+
+form{
+   
+    margin: 2rem auto;
+    width: 100%;
+}
+.form-inputs{
+   
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem;
+    max-width:590px;
+    margin:  2rem auto ;
+    background: rgb(0, 149, 246);
+
+
+
+
+}
+.form-inputs input{
+    border: 1px solid #99988c;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.875rem 1rem;
+    width: 100%;
+    background: rgb(0, 149, 246);
+    
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(0, 149, 246)inset !important;
+}
+
+
+.form-inputs button {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #99988c;
+    background-color: rgb(2, 29, 56);
+    color: #fff;
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 2rem;
+  }
+    .login__logo img {
+    width: 10.25rem !important;
+    
+  }
+    .login__logo{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+@media screen and (max-width:550px) {
+    .login__logo img{
+        width: 16rem !important;
+    }
+    .login__welcome{
+padding: 0;    }
+}

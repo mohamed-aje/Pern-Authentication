@@ -1,0 +1,16 @@
+body{
+    background:-moz-radial-gradient(circle at 0% 21%, rgba(33, 150, 243, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 0% 21%, rgba(33, 150, 243, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 0% 21%, rgba(33, 150, 243, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 0% 21%, rgba(33, 150, 243, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(103, 58, 183, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 0% 21%, rgba(33, 150, 243, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(103, 58, 183, 1) 100%);
+         
+}

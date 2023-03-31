@@ -1,0 +1,111 @@
+
+.login__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    margin: 0;
+
+
+  }
+  .login__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .login__logo img {
+    width: 14rem !important;
+    
+  }
+  .login__welcome {
+    margin: 0 auto;
+    padding-top: 13.5rem;
+    max-width: fit-content;
+  
+  }
+  .login__form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 1.25rem;
+    width: 100%;
+    margin:  2rem auto ;
+    background: rgb(0, 149, 246);
+
+
+    
+    
+    
+  }
+  .login__form input {
+    border: 1px solid #99988c;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.875rem 1rem;
+    width: 100%;
+    background: rgb(0, 149, 246);
+  }
+  input::placeholder {
+    opacity: 0.5;
+    color: #fff;
+}
+
+  .login__form-container{
+    margin: 2rem 2rem;
+  }
+  .login-form div {
+    margin: 20px 0;
+  }
+    .login__form button {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #99988c;
+    background-color: rgb(2, 29, 56);
+    color: #fff;
+    font-size: 18px;
+    padding: 0 25px;
+    margin-bottom: 2rem;
+  }
+  div.login-form label{
+    display: inline-block;
+    color: #fff;
+  }
+   .forgot-password {
+    float: right;
+  }
+  .login-form button:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+  .or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line{
+    border:0;
+    border-bottom: 1px solid#BEC3C9;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 4px;
+
+  }
+  .or p{
+    color: #fff
+  }
+  .create-account{
+    margin-top: 1rem;
+    border:1px solid #BEC3C9;
+    padding: 1rem;
+  }
+  .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup a{
+    color: #fff;
+    margin-left:2px ;
+  }
+ 

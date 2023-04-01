@@ -2,11 +2,6 @@
     margin: 0 ;
     padding: 20px;
 }
-.register-form h1{
-    font-size: large;
-    text-align: center;
-    font-weight: 800;
-}
 
 form{
    
@@ -57,21 +52,25 @@ input:-webkit-autofill:active{
     padding: 0 25px;
     margin-bottom: 2rem;
   }
-    .login__logo img {
+    .register__logo img {
     width: 10.25rem !important;
     
   }
-    .login__logo{
+    .register__logo{
+        margin-top: 4rem;
     display: flex;
     justify-content: center;
   }
 
 
-
-@media screen and (max-width:550px) {
-    .login__logo img{
-        width: 16rem !important;
+  @media screen and (max-width:550px) {
+    .register__logo img{
+        width: 12rem !important;
     }
-    .login__welcome{
-padding: 0;    }
-}
+    form{
+   
+        margin: 2rem auto;
+        width: auto;
+    }
+  
+  }

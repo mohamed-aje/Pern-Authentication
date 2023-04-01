@@ -30,7 +30,7 @@ const Register = () => {
   return (
     <div className="login__container bg__gardient">
       <div className="login__welcome">
-        <div className="login__logo">
+        <div className="register__logo">
           <div className="box-1">
             <img src={pic5} />
           </div>

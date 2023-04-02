@@ -29,18 +29,25 @@ const Dashboard = ({ setAuth }) => {
     getName();
   }, []);
   return (
-    <div className="navbar ">
-      <Link href="#home">Dashboard</Link>
-      <div className="dropdown">
-        <button className="dropbtn">
-          Welcome {name}
-          <IoMdArrowDropdown className="arrow down"></IoMdArrowDropdown>
-        </button>
-        <div className="dropdown-content">
-          <Link onClick={(e) => logout(e)}>Logout</Link>
+    <>
+      <div className="navbar ">
+        <Link to="/dashboard">Dashboard</Link>
+        <div className="dropdown">
+          <button className="dropbtn">
+            Welcome {name}
+            <IoMdArrowDropdown className="arrow down"></IoMdArrowDropdown>
+          </button>
+          <div className="dropdown-content">
+            <Link onClick={(e) => logout(e)}>Logout</Link>
+          </div>
         </div>
       </div>
-    </div>
+      <div>
+        <h1 style={{ textAlign: "center" }}>
+          Welcome to Authentication Dashboard.
+        </h1>
+      </div>
+    </>
   );
 };
 

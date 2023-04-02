@@ -35,6 +35,7 @@ const App = () => {
   useEffect(() => {
     checkAuthenticated();
   }, []);
+
   return (
     <>
       <ToastContainer />
@@ -44,7 +45,7 @@ const App = () => {
           element={!isAuth ? <Login setAuth={setAuth} /> : <Dashboard />}
         />
         <Route
-          path="/dashboard"
+          path="/"
           element={
             isAuth ? <Dashboard setAuth={setAuth} /> : <Navigate to="/login" />
           }

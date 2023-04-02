@@ -19,16 +19,21 @@ const Register = ({ setAuth }) => {
         body: JSON.stringify(body),
       });
       const parseResponse = await response.json();
-      localStorage.setItem("token", parseResponse.token);
-
-      toast.success(
-        "You have successfully registered!! you will be redirected to the Dashboard."
-      );
-      setAuth(true);
-    } catch (error) {
-      console.error(error.message);
+      if (parseResponse.token) {
+        localStorage.setItem("token", parseResponse.token);
+        setAuth(true);
+        toast.success(
+          "You have successfully registered!! you will be redirected to the Dashboard"
+        );
+      } else {
+        setAuth(false);
+        toast.error(parseResponse);
+      }
+    } catch (err) {
+      console.error(err.message);
     }
   };
+
   return (
     <div className="login__container bg__gardient">
       <div className="login__welcome">

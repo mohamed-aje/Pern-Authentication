@@ -18,7 +18,7 @@
   }
   .login__welcome {
     margin: 0 auto;
-    padding-top: 13.5rem;
+    padding: 0;
     max-width: fit-content;
   
   }

@@ -31,7 +31,7 @@ const Dashboard = ({ setAuth }) => {
   return (
     <>
       <div className="navbar ">
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/">Dashboard</Link>
         <div className="dropdown">
           <button className="dropbtn">
             Welcome {name}

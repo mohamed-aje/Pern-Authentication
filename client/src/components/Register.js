@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./styles/register.css";
 import { Link } from "react-router-dom";
 import pic5 from "../assets/pic5.png";
+import { toast } from "react-toastify";
 
-const Register = () => {
+const Register = ({ setAuth }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -18,11 +19,12 @@ const Register = () => {
         body: JSON.stringify(body),
       });
       const parseResponse = await response.json();
-      const token = localStorage.getItem("token", parseResponse);
-      window.location.href = "dashboard";
-      window.alert(
+      localStorage.setItem("token", parseResponse.token);
+
+      toast.success(
         "You have successfully registered!! you will be redirected to the Dashboard."
       );
+      setAuth(true);
     } catch (error) {
       console.error(error.message);
     }

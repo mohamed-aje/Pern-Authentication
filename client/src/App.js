@@ -12,6 +12,8 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Setting from "./components/Setting";
+import Profile from "./components/Setting";
 
 const App = () => {
   const [isAuth, setIsauth] = useState(false);
@@ -42,10 +44,12 @@ const App = () => {
       <Routes>
         <Route
           path="/login"
-          element={!isAuth ? <Login setAuth={setAuth} /> : <Dashboard />}
+          element={
+            !isAuth ? <Login setAuth={setAuth} /> : <Navigate to="/dashboard" />
+          }
         />
         <Route
-          path="/"
+          path="/dashboard"
           element={
             isAuth ? <Dashboard setAuth={setAuth} /> : <Navigate to="/login" />
           }
@@ -56,6 +60,7 @@ const App = () => {
             !isAuth ? <Register setAuth={setAuth} /> : <Navigate to="/login" />
           }
         />
+        <Route path="/my-profile" element={<Profile />} />
       </Routes>
     </>
   );

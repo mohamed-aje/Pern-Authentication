@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 import "./styles/Navbar.css";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Navbar from "./Navbar";
 
 const Dashboard = ({ setAuth }) => {
   const [name, setName] = useState("");
+  const [admin, setAdmin] = useState(true);
   const getName = async () => {
     try {
       const response = await fetch("http://localhost:3001/dashboard", {
@@ -30,20 +32,9 @@ const Dashboard = ({ setAuth }) => {
   }, []);
   return (
     <>
-      <div className="navbar ">
-        <Link to="/">Dashboard</Link>
-        <div className="dropdown">
-          <button className="dropbtn">
-            Welcome {name}
-            <IoMdArrowDropdown className="arrow down"></IoMdArrowDropdown>
-          </button>
-          <div className="dropdown-content">
-            <Link onClick={(e) => logout(e)}>Logout</Link>
-          </div>
-        </div>
-      </div>
+      <Navbar logout={logout} name={name} />
       <div>
-        <h1 style={{ textAlign: "center" }}>
+        <h1 style={{ textAlign: "center", color: "white" }}>
           Welcome to Authentication Dashboard.
         </h1>
       </div>

@@ -40,11 +40,14 @@ const Login = ({ setAuth }) => {
     <form onSubmit={onSubmitForm}>
       <div className="login__container ">
         <div className="login__welcome">
-          <div className="login__logo">
-            <div className="box-1">
-              <img src={pic1} />
-            </div>
-          </div>
+          <h1 style={{ color: "var(--glow-color)", textAlign: "center" }}>
+            PERN STACK{" "}
+          </h1>
+
+          <br />
+          <h2 style={{ color: "var(--glow-color)", textAlign: "center" }}>
+            ‹ Authentication Application ›{" "}
+          </h2>
         </div>
         <div className="login__form-container  ">
           <div className="login__form ">
@@ -60,8 +63,8 @@ const Login = ({ setAuth }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button className="submit-btn" type="submit">
-              Login
+            <button className="glowing-btn" type="submit">
+              <span className="glowing-txt">Login</span>
             </button>
             <div className="or">
               <div className="line" />
@@ -71,7 +74,9 @@ const Login = ({ setAuth }) => {
             <div className="create-account">
               <span className="signup">
                 <p> Don't have an account?</p>
-                <Link to="/register">Sign up</Link>
+                <Link to="/register">
+                  <span className="glowing-txt">Sign up</span>
+                </Link>
               </span>
             </div>
           </div>
